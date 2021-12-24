@@ -329,7 +329,7 @@ source_env() {
   if [[ -d $rcpath ]]; then
     rcpath=$rcpath/.envrc
   fi
-  if [[ ! -e $rcpath ]]; then
+  if [[ ! -f $rcpath ]]; then
     log_status "referenced $rcpath does not exist"
     return 1
   fi
